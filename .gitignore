@@ -2,7 +2,7 @@
 models/
 
 # Benchmark output
-results/
+# results/
 
 # Database
 *.db
