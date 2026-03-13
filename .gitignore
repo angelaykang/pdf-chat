@@ -1,0 +1,21 @@
+# Models (multi-GB GGUF files)
+models/
+
+# Benchmark output
+results/
+
+# Database
+*.db
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Environment
+.env
+
+# OS
+.DS_Store
+Thumbs.db
