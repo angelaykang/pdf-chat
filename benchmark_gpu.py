@@ -65,9 +65,9 @@ LLM_MODELS = {
         "repo_id": "mistralai/Mistral-7B-Instruct-v0.2",
         "n_ctx": 8192,
     },
-    "Phi-3-Mini-3.8B": {
-        "repo_id": "microsoft/Phi-3-mini-4k-instruct",
-        "n_ctx": 4096,
+    "Qwen2.5-3B-Instruct": {
+        "repo_id": "Qwen/Qwen2.5-3B-Instruct",
+        "n_ctx": 32768,
     },
     "TinyLlama-1.1B": {
         "repo_id": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
@@ -374,6 +374,10 @@ def build_hf_llm(repo_id):
             bnb_4bit_quant_type="nf4",
         )
 
+    extra_model_kwargs = {}
+    if "Qwen" in repo_id:
+        extra_model_kwargs["attn_implementation"] = "eager"
+
     model = AutoModelForCausalLM.from_pretrained(
         repo_id,
         cache_dir=os.path.join(WEIGHTS_DIR, "transformers"),
@@ -382,6 +386,7 @@ def build_hf_llm(repo_id):
         torch_dtype=dtype,
         quantization_config=quant_config,
         low_cpu_mem_usage=True,
+        **extra_model_kwargs,
     )
     model.eval()
 
