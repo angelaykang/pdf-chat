@@ -21,7 +21,7 @@ CHUNK_SIZE = 500
 CHUNK_OVERLAP = 50      # overlap keeps context intact across chunk boundaries
 K_RETRIEVE = 12         # number of top chunks passed to the LLM as context
 
-LOCAL_MODEL_PATH = os.path.join(MODELS_DIR, "mistral-7b-instruct.Q4_K_M.gguf")
+LOCAL_MODEL_PATH = os.path.join(MODELS_DIR, "qwen2.5-3b-instruct.Q4_K_M.gguf")
 EMBED_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
 OPENAI_MODEL = "gpt-4o-mini"
 

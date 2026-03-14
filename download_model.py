@@ -1,10 +1,10 @@
 """
-Download Mistral 7B Instruct GGUF (Q4_K_M) into models/.
+Download Qwen 2.5 3B Instruct GGUF (Q4_K_M) into models/.
 
 Usage:
   python download_model.py
 
-The file is ~4.4 GB; download can take several minutes. Requires internet.
+The file is ~2 GB; download can take several minutes. Requires internet.
 After this, run: python app_p1.py open_source
 """
 
@@ -15,12 +15,12 @@ import urllib.request
 
 # Hugging Face direct link (no login)
 URL = (
-    "https://huggingface.co/TheBloke/Mistral-7B-Instruct-v0.2-GGUF/resolve/main/"
-    "mistral-7b-instruct-v0.2.Q4_K_M.gguf"
+    "https://huggingface.co/Qwen/Qwen2.5-3B-Instruct-GGUF/resolve/main/"
+    "qwen2.5-3b-instruct-q4_k_m.gguf"
 )
-DEST_NAME = "mistral-7b-instruct.Q4_K_M.gguf"
-# Expected size in bytes (~4.37 GB) for a quick sanity check after download
-EXPECTED_MIN_BYTES = 4_000_000_000
+DEST_NAME = "qwen2.5-3b-instruct.Q4_K_M.gguf"
+# Expected size in bytes (~2 GB) for a quick sanity check after download
+EXPECTED_MIN_BYTES = 1_500_000_000
 MAX_RETRIES = 3
 RETRY_DELAY_SEC = 10
 
@@ -53,7 +53,7 @@ def main() -> None:
         total_mb = total_size / (1024 * 1024)
         print("\r  %.1f%% (%.0f / %.0f MB)" % (pct, done_mb, total_mb), end="", flush=True)
 
-    print("Downloading Mistral 7B Instruct Q4_K_M (~4.4 GB).")
+    print("Downloading Qwen 2.5 3B Instruct Q4_K_M (~2 GB).")
     print("This may take several minutes depending on your connection.")
     last_error = None
     for attempt in range(1, MAX_RETRIES + 1):

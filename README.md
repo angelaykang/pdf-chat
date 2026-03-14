@@ -4,7 +4,7 @@ Chat with your PDF documents using retrieval-augmented generation (RAG). Upload 
 
 Supports two backends:
 - **OpenAI** — uses OpenAI embeddings + GPT for high-quality answers (requires API key)
-- **Open-source** — uses HuggingFace sentence-transformers + a local Mistral 7B GGUF model, fully offline with no API costs
+- **Open-source** — uses HuggingFace sentence-transformers + a local Qwen 2.5 3B Instruct GGUF model, fully offline with no API costs
 
 
 ### Team: pylovers
@@ -31,7 +31,7 @@ Supports two backends:
 
 - **Python** 3.10+
 - **macOS or Linux** (for `llama-cpp-python`; Windows may need extra build setup)
-- **~5 GB disk** for the local GGUF model (open-source mode only)
+- **~2 GB disk** for the local GGUF model (open-source mode only)
 - **OpenAI API key** (OpenAI mode only)
 
 ---
@@ -67,7 +67,7 @@ pdfs/
 python download_model.py
 ```
 
-This downloads Mistral 7B Instruct Q4_K_M (~4.4 GB) into `models/`. Only needs to run once.
+This downloads Qwen 2.5 3B Instruct Q4_K_M (~2 GB) into `models/`. Only needs to run once.
 
 ---
 
