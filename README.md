@@ -183,9 +183,11 @@ Open-source mode does not require any environment variables.
 
 # ChatBot Web Application
 
+- Backend: Flask + Python RAG pipeline   
+- Frontend: HTML + CSS + JavaScript    
 
 
-First of all, please go to webapp directory and start python flast
+First of all, please go to webapp directory and start python flask
 ```
 python web_app.py
 ```
