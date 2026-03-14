@@ -127,8 +127,22 @@ Goodbye.
 ├── requirements.txt     # Python dependencies
 ├── README.md            # This file
 ├── pdfs/                # Place your PDF documents here
+├── webapp/              # ChatBot Application files
 └── models/              # Local LLM model (auto-created by download_model.py)
+
 ```
+
+# ChatBot Web Application
+
+First of all, please go to webapp directory and start python flast
+```
+python web_app.py
+```
+Then open a browser and go to
+```
+http://127.0.0.1:5000/
+```
+
 
 ---
 
