@@ -131,6 +131,7 @@ Goodbye.
 └── models/              # Local LLM model (auto-created by download_model.py)
 
 ```
+<br><br>
 
 # ChatBot Web Application
 
@@ -143,7 +144,7 @@ Then open a browser and go to
 http://127.0.0.1:5000/
 ```
 
-
+<br><br><br><br>
 ---
 
 ## Configuration
