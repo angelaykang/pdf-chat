@@ -131,22 +131,6 @@ Goodbye.
 └── models/              # Local LLM model (auto-created by download_model.py)
 
 ```
-<br><br>
-
-# ChatBot Web Application
-
-First of all, please go to webapp directory and start python flast
-```
-python web_app.py
-```
-Then open a browser and go to
-```
-http://127.0.0.1:5000/
-```
-
-<br><br><br><br>
----
-
 ## Configuration
 
 These constants at the top of `app_p1.py` can be tuned:
@@ -192,3 +176,23 @@ Open-source mode does not require any environment variables.
 - [llama-cpp-python](https://github.com/abetlen/llama-cpp-python) — local GGUF model inference
 - [sentence-transformers](https://www.sbert.net/) — open-source text embeddings
 - [OpenAI API](https://platform.openai.com/) — embeddings and chat completions (optional)
+
+
+
+<br>
+
+# ChatBot Web Application
+
+
+
+First of all, please go to webapp directory and start python flast
+```
+python web_app.py
+```
+Then open a browser and go to
+```
+http://127.0.0.1:5000/
+```
+If you can see the web like this, the chatbot web application is successfully loaded
+<img width="1488" height="1006" alt="Image" src="https://github.com/user-attachments/assets/e3aa2110-117b-49dc-a7e6-f4cf5eb02365" />
+
