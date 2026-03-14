@@ -6,6 +6,14 @@ Supports two backends:
 - **OpenAI** — uses OpenAI embeddings + GPT for high-quality answers (requires API key)
 - **Open-source** — uses HuggingFace sentence-transformers + a local Mistral 7B GGUF model, fully offline with no API costs
 
+
+### Team: pylovers
+| Name | USC ID |
+|------|--------|
+| Dylan Chen | 6984540266 |
+| Angela Kang | 8957777203 |
+| Vincent-Daniel Yun | 4463771151 |
+
 ---
 
 ## How It Works
